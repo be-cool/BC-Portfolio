@@ -48,6 +48,10 @@ body {
     top: 0;
 } */
 
+.color {
+    color: darkgreen;
+}
+
 .navbar {
     background-color: darkgreen;
     padding-top: 0;
