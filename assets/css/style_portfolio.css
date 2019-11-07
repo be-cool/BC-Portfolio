@@ -39,6 +39,7 @@ h6 {
 
 .pic {
     width: 90%;
+    border-radius: 8px;
 }
 
 #hangman {

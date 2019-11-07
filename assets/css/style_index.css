@@ -5,21 +5,22 @@
     float: left;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 #p-one {
     /* float: left; */
     margin-left: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     line-height: 1.5;
-    margin-top: 35px;
+    margin-top: 3%;
 }
 #p-two {
-    float: left;
+    /* float: left; */
     margin-left: 10px;
     line-height: 1.5;
 }
 #p-three {
-    float: left;
+    /* float: left; */
     margin-left: 10px;
     line-height: 1.5;
 }
