@@ -3,3 +3,16 @@
     padding-top: 5%;
     padding-bottom: 2%;;
 }
+
+#linkedin {
+    height: 100px;
+    width: 100px;
+}
+#github{
+    height: 100px;
+    width: 150px;
+}
+
+.contactPics {
+    width: 40%;
+}
