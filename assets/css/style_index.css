@@ -23,3 +23,38 @@
     margin-left: 10px;
     line-height: 1.5;
 }
+
+.skillsBox {
+    width: 90%;
+}
+
+/* animation css for the skills bars */
+.meter { 
+    height: 30px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 1%;
+    text-align: center;
+}
+.meter span {
+    display: block;
+    height: 100%;
+}
+.progress {
+    background-color: darkgreen;
+    animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+
+}
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+#skill{
+    color: whitesmoke;
+    margin-top: 3px;
+}

@@ -7,10 +7,12 @@
 #linkedin {
     height: 100px;
     width: 100px;
+    margin-left: 25%;
 }
 #github{
     height: 100px;
     width: 150px;
+    margin-left: 25%;
 }
 
 .contactPics {

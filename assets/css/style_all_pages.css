@@ -9,12 +9,13 @@ body {
     color: #6b6b6b;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
       /* Full height */
-  height: 100%;
+  /* height: auto; */
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 .tab {
@@ -110,7 +111,8 @@ body {
 footer {
     text-align: center;
     /* margin-top: 50px; */
-    background-color: darkgreen;
+    color: darkgreen;
+    background-color: darkgrey;
     height: 30px;
     width: 100%;
     position: fixed;
@@ -120,7 +122,6 @@ footer {
     /* padding-top: 25px; */
     /* padding-bottom: 1px; */
     font-size: 14px;
-    color: whitesmoke;
 }
 
 h2 {

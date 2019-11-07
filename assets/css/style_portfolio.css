@@ -17,7 +17,7 @@ h6 {
 }
 
 .col-sm-4 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #gbooks {
@@ -37,13 +37,20 @@ h6 {
     margin-top: 5%;
 }
 
-#train {
+.pic {
     width: 90%;
+}
+
+#hangman {
+    height: 75%;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 5%;
 }
 
 .pics{
     position: relative;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
 }
 
 input{
