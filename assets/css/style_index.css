@@ -44,6 +44,11 @@
     display: block;
     height: 100%;
 }
+
+.meter:hover{
+    transform: 1.1;
+}
+
 .progress {
     background-color: darkgreen;
     animation: progressBar 3s ease-in-out;
@@ -58,4 +63,8 @@
 #skill{
     color: whitesmoke;
     margin-top: 3px;
+}
+
+.skills {
+    text-align: center;
 }
