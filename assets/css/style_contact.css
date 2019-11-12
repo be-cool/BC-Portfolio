@@ -18,3 +18,8 @@
 .contactPics {
     width: 40%;
 }
+
+.container {
+    width: 90%;
+    text-align: center;
+}

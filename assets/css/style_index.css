@@ -2,26 +2,25 @@
     margin-left: 10px;
 }
 .profile-pic {
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
+    align-content: center;
     margin-bottom: 10px;
 }
 #p-one {
     /* float: left; */
-    margin-left: 10px;
+    /* margin-left: 10px;
     /* margin-right: 10px; */
     line-height: 1.5;
-    margin-top: 3%;
+    /* margin-top: 3%; */
+
 }
 #p-two {
     /* float: left; */
-    margin-left: 10px;
+    /* margin-left: 10px; */
     line-height: 1.5;
 }
 #p-three {
     /* float: left; */
-    margin-left: 10px;
+    /* margin-left: 10px; */
     line-height: 1.5;
 }
 
@@ -30,7 +29,8 @@
 }
 
 .aboutBox {
-    width: 80%;
+    width: 90%;
+    text-align: center;
 }
 
 /* animation css for the skills bars */
