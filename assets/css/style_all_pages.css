@@ -54,7 +54,8 @@ body {
 }
 
 .navbar-brand {
-    margin-left: 17%;
+    /* margin-left: 21%; */
+    float: left;
     background-color: darkgreen;
     color: whitesmoke;
     width: 150px;
@@ -67,10 +68,6 @@ body {
     width: auto;
     margin: auto;
     padding: auto;
-}
-
-.navbar-nav {
-    margin-left: 55%;
 }
 
 /* .myname {
