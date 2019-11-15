@@ -1,3 +1,4 @@
+/* main component styling */
 h6 {
     color: whitesmoke;
     background-color: #4aaaa5;
@@ -13,21 +14,21 @@ h6 {
 body{
     position: relative;
 }
-
+input{
+    color: whitesmoke;
+    background-color: #4aaaa5;
+}
 .container {
     width: 90%;
     text-align: center;
 }
 
-.col-sm-4 {
-    display: flexbox;
-    margin-top: 10%;
-}
 
+
+/* picture stylings */
 #seinfeld{ 
     margin-top: 5%;
 }
-
 #gbooks {
     width: 90%; 
     padding-left: 10%;
@@ -36,7 +37,6 @@ body{
     padding-bottom: 14%; 
     margin: auto;
 }
-
 #giphy {
     width: 70%;
     height: 85%;
@@ -44,23 +44,36 @@ body{
     /* margin-top: 5%; */
     display: flexbox;
 }
+#hangman {
+    height: 290px;
+    /* width: 80%; */
+    display: block;
+    margin: auto;
+}
 
 .pic {
     width: 90%;
     border-radius: 8px;
 }
 
-#hangman {
-    /* height: 75%;
-    width: 80%; */
-}
 
-input{
-    color: whitesmoke;
-    background-color: #4aaaa5;
-}
 
-.pic {
-    opacity: 1.0;
+/* rows styling */
+.instructions {
+    margin-top: 2%;
+    color: darkgreen;
+}
+.first {
+    display: flexbox;
+    margin-top: 3%;
+}
+.rest {
+    display: flexbox;
+    margin-top: 7%;
+}
+.bottom {
+    display: flexbox;
+    margin-top: 7%;
+    margin-bottom: 7%;
 }
 
