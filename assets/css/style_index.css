@@ -73,3 +73,28 @@
 .skills {
     text-align: center;
 }
+#mail {
+    height: 60px;
+    width: 75px;
+}
+#linkedin {
+    height: 60px;
+    width: 60px;
+    /* margin-left: 25%; */
+}
+#github{
+    /* display: block; */
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    /* margin-bottom: 15px; */
+}
+
+.contactPics {
+    /* align-content: center; */
+    margin: 15px;
+}
+
+.contacts {
+    margin: 1.8%;
+}
