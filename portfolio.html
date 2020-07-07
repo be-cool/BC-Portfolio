@@ -2,48 +2,14 @@
 <html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150575121-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-150575121-1');
-
-      /*grab all links with jQuery selector*/
-allLinks = $('a');
-
-/* handle and set information for console.log and passing event to GA*/
-tagLink = function (link) {
-  link.onclick = function(e) {
-     /*open your offsite clicks in new tab, easier navigation back to homepage:)*/   
-      e.preventDefault();
-      /*log outbound link*/
-      console.log(link.href);
-      /*example call to GA events*/
-      ga('send', 'event', 'link interactions', 'clicks', link.href);
-      window.open(link.href, '_blank');
-      return true;
-  }
-}
-
-/* loop through array and bind function from above to all links */
-tagLinks = function(links) {
-  for (i = 0; i < links.length; i++) {
-    if (links[i].href != '') {
-      tagLink(links[i]);
-    }
-  }
-}
-
-/*Call the function*/
-tagLinks(allLinks);
-
-/*you can test calls going to GA by going to chrome developer tab and filter network traffic for col*/
-
-
-
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-150575121-1');
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150575121-1"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -156,4 +122,41 @@ tagLinks(allLinks);
 
 </body>
 </head>
+
+<script>
+
+    /*grab all links with jQuery selector*/
+allLinks = $('a');
+
+/* handle and set information for console.log and passing event to GA*/
+tagLink = function (link) {
+link.onclick = function(e) {
+   /*open your offsite clicks in new tab, easier navigation back to homepage:)*/   
+    e.preventDefault();
+    /*log outbound link*/
+    console.log(link.href);
+    /*example call to GA events*/
+    ga('send', 'event', 'link interactions', 'clicks', link.href);
+    window.open(link.href, '_blank');
+    return true;
+}
+}
+
+/* loop through array and bind function from above to all links */
+tagLinks = function(links) {
+for (i = 0; i < links.length; i++) {
+  if (links[i].href != '') {
+    tagLink(links[i]);
+  }
+}
+}
+
+/*Call the function*/
+tagLinks(allLinks);
+
+/*you can test calls going to GA by going to chrome developer tab and filter network traffic for col*/
+
+
+
+  </script>
 </html>
