@@ -9,6 +9,36 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-150575121-1');
+            /*grab all links with jQuery selector*/
+      allLinks = $('a');
+
+      /* handle and set information for console.log and passing event to GA*/
+      tagLink = function (link) {
+        link.onclick = function(e) {
+          /*open your offsite clicks in new tab, easier navigation back to homepage:)*/   
+            e.preventDefault();
+            /*log outbound link*/
+            console.log(link.href);
+            /*example call to GA events*/
+            ga('send', 'event', 'link interactions', 'clicks', link.href);
+            window.open(link.href, '_blank');
+            return true;
+        }
+      }
+
+      /* loop through array and bind function from above to all links */
+      tagLinks = function(links) {
+        for (i = 0; i < links.length; i++) {
+          if (links[i].href != '') {
+            tagLink(links[i]);
+          }
+        }
+      }
+
+      /*Call the function*/
+      tagLinks(allLinks);
+
+      /*you can test calls going to GA by going to chrome developer tab and filter network traffic for col*/
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +53,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style_all_pages.css" />
     <link rel="stylesheet" href="assets/css/style_index.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald:500|Roboto:500,700&display=swap" rel="stylesheet">  
