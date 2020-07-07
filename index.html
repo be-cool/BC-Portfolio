@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -145,12 +144,15 @@
     /* handle and set information for console.log and passing event to GA*/
     tagLink = function (link) {
       link.onclick = function(e) {
-        /*open your offsite clicks in new tab, easier navigation back to homepage:*/   
+          /*open your offsite clicks in new tab, easier navigation back to homepage:*/   
           e.preventDefault();
+
           /*log outbound link*/
           console.log(link.href);
+
           /*example call to GA events*/
-          ga('send', 'event', 'link interactions', 'clicks', link.href);
+          gtag('event', 'clicks', {'event_category': 'offsite','event_label': link.href})
+
           window.open(link.href, '_blank');
           return true;
       }
